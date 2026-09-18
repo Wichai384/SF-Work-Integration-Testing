@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { MyName } from './MyName';
 
-test('Login -> Inventory -> Shopping Card stub', async ({ page }) => {
+test('Login -> Inventory -> MyName', async ({ page }) => {
   await page.goto('/');
 
   await page.locator('#user-name').fill('standard_user');

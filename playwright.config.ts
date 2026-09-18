@@ -4,7 +4,7 @@ export default defineConfig({
 
   testDir: './tests',
 
-  testMatch: ['**/*.spec.ts', '**/*.test.ts', '**/Work.ts', '**/TestName.ts'],
+  testMatch: ['**/*.spec.ts', '**/*.test.ts', '**/Work*.ts', '**/TestName.ts'],
 
   timeout: 30_000,
 

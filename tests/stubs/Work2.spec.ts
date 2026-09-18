@@ -6,7 +6,7 @@ async function addProductToCart(page: import('@playwright/test').Page) {
   await expect(page.locator('.shopping_cart_badge')).toHaveText('1');
 }
 
-test('Driver: Add product -> Cart', async ({ page }) => {
+test('Login -> Inventory -> Add product to Cart', async ({ page }) => {
   await page.goto('/');
 
   await page.locator('#user-name').fill('standard_user');
